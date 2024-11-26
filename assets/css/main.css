@@ -1,23 +1,9 @@
-/**
-* Template Name: Delicious
-* Template URL: https://bootstrapmade.com/delicious-free-restaurant-bootstrap-theme/
-* Updated: Aug 07 2024 with Bootstrap v5.3.3
-* Author: BootstrapMade.com
-* License: https://bootstrapmade.com/license/
-*/
-
-/*--------------------------------------------------------------
-# Font & Color Variables
-# Help: https://bootstrapmade.com/color-system/
---------------------------------------------------------------*/
-/* Fonts */
 :root {
   --default-font: "Roboto",  system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   --heading-font: "Satisfy",  sans-serif;
   --nav-font: "Poppins",  sans-serif;
 }
 
-/* Global Colors - The following color variables are used throughout the website. Updating them here will change the color scheme of the entire website */
 :root { 
   --background-color: #ffffff; /* Background color for the entire website, including individual sections */
   --default-color: #444444; /* Default color used for the majority of the text content across the entire website */
@@ -222,7 +208,7 @@ h6 {
 # Global Header
 --------------------------------------------------------------*/
 .header {
-  --background-color: rgba(255, 255, 255, 0);
+  --background-color: rgba(8, 8, 8, 0);
   --default-color: #ffffff;
   --heading-color: #ffffff;
   color: var(--default-color);
@@ -307,7 +293,7 @@ h6 {
 /* Global Header on Scroll
 ------------------------------*/
 .scrolled .header {
-  --background-color: rgba(21, 17, 13, 0.85);
+  --background-color: rgba(14, 13, 12, 0.85);
 }
 
 /*--------------------------------------------------------------
@@ -401,7 +387,7 @@ h6 {
   }
 
   .navmenu .dropdown:hover>ul {
-    opacity: 1;
+    opacity: 0;
     top: 100%;
     visibility: visible;
   }
@@ -413,7 +399,7 @@ h6 {
   }
 
   .navmenu .dropdown .dropdown:hover>ul {
-    opacity: 1;
+    opacity: 0;
     top: 0;
     left: -100%;
     visibility: visible;
@@ -512,12 +498,12 @@ h6 {
   }
 
   .navmenu .dropdown ul ul {
-    background-color: rgba(33, 37, 41, 0.1);
+    background-color: rgba(2, 2, 2, 0.1);
   }
 
   .navmenu .dropdown>.dropdown-active {
     display: block;
-    background-color: rgba(33, 37, 41, 0.03);
+    background-color: rgba(0, 0, 0, 0.03);
   }
 
   .mobile-nav-active {
@@ -538,7 +524,7 @@ h6 {
     position: fixed;
     overflow: hidden;
     inset: 0;
-    background: rgba(33, 37, 41, 0.8);
+    background: rgba(3, 3, 3, 0.8);
     transition: 0.3s;
   }
 
@@ -1668,4 +1654,37 @@ section,
 --------------------------------------------------------------*/
 .starter-section {
   /* Add your styles here */
+}
+
+.mapa {
+  display: flex;
+  justify-content: center; /* Centraliza horizontalmente */
+  align-items: center;    /* Centraliza verticalmente */
+  height: 40vh;  
+  margin-bottom: 60px;
+}
+
+.maps {
+  text-align: center; /* Garante centralização para o conteúdo interno */
+  display: flex;      /* Certifica que Flexbox está aplicado à div */
+  justify-content: center; /* Centraliza o iframe dentro da div */
+  align-items: center;     /* Mantém alinhamento vertical */
+  width: 100%;  
+}
+
+.maps iframe {
+  width: 60%;      /* Largura desejada */
+  height: 400px;   /* Altura desejada */
+  max-width: 100%; /* Impede que ultrapasse os limites da tela */
+  flex-shrink: 0;
+}
+
+input::placeholder {
+  color: black !important; 
+  opacity: 1 !important; 
+}
+
+textarea::placeholder {
+  color: black !important; 
+  opacity: 1 !important; 
 }
